@@ -1,0 +1,50 @@
+{{> header}}
+<wrapper class="content">
+    <container>
+        <spacer size="38" class="show-for-large"></spacer>
+        <row>
+            <columns>
+                <h1>Здравствуйте, Светлана! </h1>
+                <p>Спасибо за то, что вы оставили отзыв о товаре на нашем сайте.
+                </p>
+                <p class="mb-reset-mobile">В благодарность мы предлагаем вам промокод со скидкой 15% на следующую покупку:</p>
+                <spacer size="22"></spacer>
+                <center>
+                    <span class="secondary text-large">CXH-323-HJ2</span>
+                </center>
+            </columns>
+        </row>
+        <spacer size="41"></spacer>
+    </container>
+</wrapper>
+<wrapper class="review">
+    <hr>
+    <spacer size="38"></spacer>
+    <container>
+        <h2 class="h2 title">Товары, которые вы&#160;ранее покупали</h2>
+        <spacer size="28" class="show-for-large"></spacer>
+
+        {{> recently-product
+        url="assets/img/product-1.jpg"
+        name="Нурофен 0,1/5мл
+        Суспензия Апельсин 200мл"
+        made="Reckitt Benckiser (Великобритания)"
+        discount="-15%"
+
+        }}
+
+        {{> recently-product
+        url="assets/img/product-2.jpg"
+        name="Террафлекс капсулы №200"
+        made="Яндран (Хорватия)"
+        }}
+
+        {{> recently-product
+        url="assets/img/product-3.jpg"
+        name="Аква марис спрей назальный 30мл"
+        made="Яндран (Хорватия)"
+        }}
+    </container>
+
+</wrapper>
+{{> footer}}

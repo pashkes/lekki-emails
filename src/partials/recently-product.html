@@ -1,0 +1,32 @@
+<wrapper class="recently-product">
+    <row>
+        <columns large="12" small="12">
+            <row class="recently-product__row">
+                <columns></columns>
+            </row>
+        </columns>
+    </row>
+    <spacer size="22" class="show-for-large"></spacer>
+    <wrapper class="recently-product__cart">
+        <row>
+            <columns small="6" large="4">
+                <a href="#">
+                    <img src={{ url }} width="144" height="144" alt={{ name }}>
+                </a>
+            </columns>
+            <columns small="6" large="4" valign="middle">
+                <h3 class="recently-product__name"><a href="#">{{ name }}</a></h3>
+                <p>{{ made }}</p>
+            </columns>
+            <columns small="12" large="4" valign="middle">
+                <row>
+                    <columns></columns>
+                    <columns class="text-right">
+                        <button href="#" class="radius btn-secondary small-expanded large">написать отзыв</button>
+                    </columns>
+                </row>
+            </columns>
+        </row>
+    </wrapper>
+    <spacer size="25"></spacer>
+</wrapper>

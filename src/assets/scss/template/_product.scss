@@ -1,0 +1,67 @@
+.row-cost {
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    margin-bottom: 8px !important;
+  }
+}
+.hide-xl {
+  display: none;
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    display: block !important;
+  }
+}
+.product {
+
+  &__col {
+    &.columns.first {
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        padding-right: 0 !important;
+      }
+    }
+  }
+  &__name {
+    max-width: 246px;
+    margin-bottom: 5px;
+    padding-top: 9px;
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      padding-top: 0 !important;
+    }
+    a {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 18px;
+      text-decoration: none;
+      color: $primary-color;
+    }
+  }
+  &__made {
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      line-height: 18px !important;
+    }
+  }
+  &__amount,
+  &__cost,
+  &__amount-cost {
+    margin-bottom: 0;
+  }
+  &__amount,
+  &__cost {
+    color: $dark-gray;
+  }
+  &__amount {
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      padding-left: 9px !important;
+    }
+  }
+  &__cost {
+    span {
+      font-size: 11px;
+    }
+  }
+  &__amount-cost {
+    font-size: 18px;
+    font-weight: 500;
+    span {
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+<columns large="4" small="12" class="product-card">
+    <wrapper class="product-card__inner`">
+        <callout>
+            <center>
+                {{#if discount}}
+                <span class="product-card__discount">
+                        <img src="assets/img/sticker.png" width="40" height="40" alt="discount-img">
+                        <span>{{ discount }}</span>
+                    </span>
+                {{/if}}
+                <img class="img" src={{ url }} width="144" height="144" alt={{ name }}>
+            </center>
+            <spacer size="2" class="show-for-large"></spacer>
+            <h2 class="product-card__name"><a href="#">{{ name }}</a></h2>
+            <p class="product-card__made text-sm-grey ">{{ made }}</p>
+            <row >
+                <columns large="12" small="6" class="product-card__costs">
+                    {{#if oldCost}}
+                    <span class="product-card__old-cost">{{ oldCost }} <span>₽</span></span>
+                    {{/if}}
+                </columns>
+                <columns large="12" small="6" class="product-card__costs">
+                    <span class="product-card__cost small-text-right">{{ cost }} <span>₽</span></span>
+                </columns>
+            </row>
+            <button href="#" class="btn radius expanded">Купить</button>
+        </callout>
+    </wrapper>
+    {{#unlesspage 'special-offer'}}
+        <spacer size="30"></spacer>
+    {{/unlesspage}}
+    {{#ifpage 'special-offer'}}
+        <spacer size="24" class="show-for-large"></spacer>
+        <spacer size="32" class="hide-xl"></spacer>
+    {{/ifpage}}
+</columns>

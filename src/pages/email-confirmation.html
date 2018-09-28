@@ -1,0 +1,81 @@
+{{> header}}
+<wrapper class="content">
+    <container>
+        <spacer size="38" class="show-for-large"></spacer>
+        <row>
+            <columns>
+                <h1>Здравствуйте, Светлана! </h1>
+                <p>Вы успешно подписаны на новостную рассылку интернет-аптеки lekki.ru</p>
+            </columns>
+        </row>
+        <spacer size="41"></spacer>
+    </container>
+    <hr>
+    <spacer size="47"></spacer>
+    <container>
+        <row>
+            <columns class="article">
+                <a href="#"><img src="assets/img/article-1.jpg" width="272" height="160"
+                                 alt="Как ухаживать за кожей зимой. 5 шагов к сияющей коже"></a>
+                <spacer size="20"></spacer>
+                <h2 class="article__name"><a href="#">Как ухаживать за кожей зимой. 5 шагов к сияющей коже</a></h2>
+                <p class="article__date text-sm-grey">27 февраля 2018</p>
+                <p class="article__text">Отопительный сезон — это время для самозабвенного увлажнения, начиная с
+                    базового ежедневного ухода. Попробуйте умываться средством на основе мягких масел. Затем нанесите
+                    богатую антиоксидантами...</p>
+                <spacer size="45" class="hide-xl"></spacer>
+            </columns>
+            <columns class="article">
+                <a href="#">
+                    <img src="assets/img/article-2.jpg" width="272" height="160"
+                         alt="Как ухаживать за кожей зимой. 5 шагов к сияющей коже">
+                </a>
+                <spacer size="20"></spacer>
+                <h2 class="article__name"><a href="#">Как выбрать крем от&#160;усталости ног?</a></h2>
+                <p class="article__date text-sm-grey">27 февраля 2018</p>
+                <p class="article__text">Усталость, тяжесть и жжение чаще всего беспокоят людей, которые большую часть
+                    дня проводят на ногах или заняты исключительно сидячей работой. Любительницам обуви на каблуках
+                    также знакомо чувство, когда ноги…</p>
+            </columns>
+        </row>
+        <spacer size="44" class="show-for-large"></spacer>
+        <spacer size="38" class="hide-xl"></spacer>
+        <row>
+            <columns>
+                <button href="#" class="btn-secondary btn-secondary--wide radius
+small-expanded large">Читать статьи
+                </button>
+            </columns>
+        </row>
+        <spacer size="48"></spacer>
+    </container>
+    <hr>
+    <container class="custom-container">
+        <spacer size="43"></spacer>
+        <h1 class="title-md text-center">Популярные товары</h1>
+        <spacer size="12" class="show-for-large"></spacer>
+        <row>
+            {{>product-card
+            url="assets/img/product-1.jpg"
+            name="Нурофен 0,1/5мл Суспензия Апельсин 200мл"
+            made="Reckitt Benckiser (Великобритания)"
+            oldCost="800"
+            cost="695"
+            discount="-15%"
+            }}
+            {{>product-card
+            url="assets/img/product-2.jpg"
+            name="Террафлекс капсулы №200"
+            made="Яндран (Хорватия)"
+            cost="3 195"
+            }}
+            {{>product-card
+            url="assets/img/product-3.jpg"
+            name="Аква марис спрей назальный 30мл"
+            made="Яндран (Хорватия)"
+            cost="195"
+            }}
+        </row>
+    </container>
+</wrapper>
+{{> footer}}

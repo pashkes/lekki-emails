@@ -1,0 +1,21 @@
+.article {
+  &__name {
+    margin-bottom: 2px;
+    a {
+      line-height: 23px;
+      font-size: 18px;
+      font-weight: 500;
+      color: $primary-color;
+      text-decoration: none;
+    }
+  }
+  &__date {
+    margin-bottom: 12px !important;
+  }
+  &__text {
+    line-height: 22px !important;
+    &:hover {
+      color: $secondary-color !important;
+    }
+  }
+}

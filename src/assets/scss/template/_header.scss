@@ -1,0 +1,124 @@
+.header .columns {
+  padding-bottom: 0;
+}
+table.header {
+  color: #fff;
+  th.menu-item {
+    padding-right: 19px;
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      padding-right: 30px !important;
+    }
+    &:nth-child(3) {
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        padding-right: 0 !important;
+      }
+    }
+    &:last-child {
+      float: right;
+      padding-right: 0 !important;
+    }
+    a {
+      display: block;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 13px;
+      font-weight: 500;
+      &:hover {
+        color: $secondary-color !important;
+      }
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        padding-top: 6px !important;
+        padding-bottom: 6px !important;
+        letter-spacing: 0 !important;
+      }
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+.header .container {
+  background: transparent;
+}
+.header {
+  &__top-panel {
+    background: $black;
+    a {
+      color: #fff;
+    }
+  }
+  &__top-panel-inner {
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      max-width: 320px !important;
+      width: 100%;
+      margin-right: auto !important;
+      margin-left: auto !important;
+      margin-top: 4px !important;
+      margin-bottom: 4px !important;
+    }
+  }
+  &__bottom-panel {
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      margin-top: 16px !important;
+      margin-bottom: 16px !important;
+    }
+  }
+  &__contact {
+    margin-bottom: 0;
+  }
+  &__tel {
+    font-size: 18px;
+    font-weight: 500;
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      display: inline-block;
+      margin-bottom: 3px !important;
+      font-size: 14px !important;
+    }
+  }
+  &__sub-text {
+    display: block;
+    margin-top: -6px;
+    color: $dark-gray;
+    font-size: 13px;
+    @media only screen and (max-width: #{$global-breakpoint}){
+      margin-top: -3px !important;
+      font-size: 12px !important;
+    }
+  }
+  &__profile {
+    margin-bottom: 0;
+    text-align: right;
+    img {
+      display: inline-block;
+      vertical-align: middle;
+      padding-right: 8px;
+    }
+    a {
+      display: inline-block;
+      vertical-align: middle;
+      &:hover {
+        color: $secondary-color !important;
+      }
+    }
+  }
+}
+.menu {
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    width: 272px !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+  &__list{
+    padding: 0;
+    margin: 0;
+  }
+  &__item {
+    display: inline-block;
+    vertical-align: top;
+    a {
+      padding-right: 8px;
+      text-align: left;
+    }
+  }
+}

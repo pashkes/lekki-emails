@@ -1,0 +1,89 @@
+{{> header}}
+<wrapper class="content">
+    <container>
+        <spacer size="38" class="show-for-large"></spacer>
+        <row>
+            <columns>
+                <h1>Здравствуйте, Светлана! </h1>
+                <p>Ваша корзина ждет вас! Спасибо за посещение lekki.ru. Нам очень жаль, что вам не удалось завершить
+                    оформление заказа. Чтобы это сделать, щелкните на кнопку «ЗАКАЗАТЬ» ниже, чтобы вернуться к своей
+                    корзине.</p>
+                <spacer size="46"></spacer>
+            </columns>
+        </row>
+    </container>
+</wrapper>
+<wrapper>
+    <container>
+        <row>
+            <columns large="12">
+                <row>
+                    <columns large="12" class="border"></columns>
+                </row>
+            </columns>
+        </row>
+        {{>product
+        urlImg="assets/img/product-cart-1.jpg"
+        name="Нурофен 0,1/5мл Суспензия Апельсин 200мл"
+        made="Reckitt Benckiser (Великобритания)"
+        amount="1"
+        cost="695"
+        totalCost="695"
+        discount="-15%"
+
+        }}
+        {{>product
+        urlImg="assets/img/product-cart-2.jpg"
+        name="Террафлекс капсулы №200"
+        made="Яндран (Хорватия)"
+        amount="1"
+        cost="3 195"
+        totalCost="3 195"
+        }}
+        {{>product
+        urlImg="assets/img/product-cart-3.jpg"
+        name="Аква марис спрей назальный 30мл"
+        made="Яндран (Хорватия)"
+        amount="1"
+        cost="195"
+        totalCost="195"
+        }}
+        <spacer size="18"></spacer>
+        <row>
+            <columns>
+                <p class="text-large-xl text-right">Итого: 4 085 <span>₽</span></p>
+                <spacer size="18" class="show-for-large"></spacer>
+            </columns>
+        </row>
+        {{>btn title="заказать"}}
+    </container>
+</wrapper>
+<spacer size="48"></spacer>
+<hr class="hide-xl"  />
+<container class="custom-container">
+    <spacer size="46" class="hide-xl"></spacer>
+    <h2 class="h4 hide-xl">Популярные товары</h2>
+    <spacer size="8" class="hide-xl"></spacer>
+    <row>
+        {{>product-card
+        url="assets/img/product-1.jpg"
+        name="Нурофен 0,1/5мл Суспензия Апельсин 200мл"
+        made="Reckitt Benckiser (Великобритания)"
+        oldCost="800"
+        cost="695"
+        }}
+        {{>product-card
+        url="assets/img/product-2.jpg"
+        name="Террафлекс капсулы №200"
+        made="Яндран (Хорватия)"
+        cost="3 195"
+        }}
+        {{>product-card
+        url="assets/img/product-3.jpg"
+        name="Аква марис спрей назальный 30мл"
+        made="Яндран (Хорватия)"
+        cost="195"
+        }}
+    </row>
+</container>
+{{> footer}}

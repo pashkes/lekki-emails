@@ -1,0 +1,96 @@
+.footer {
+  &__load-text {
+    margin-bottom: 18px;
+    color: $secondary-color;
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      width: 200px;
+      margin-right: auto !important;
+      margin-left: auto !important;
+      margin-bottom: 20px !important;
+      line-height: 1.2 !important;
+    }
+  }
+  &__btn-first {
+    display: block;
+    vertical-align: top;
+    margin-right: 14px;
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      margin-right: 0 !important;
+    }
+  }
+  &__btn-second {
+    display: block;
+    vertical-align: top;
+    img {
+      padding-left: 24px;
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        padding-left: 0 !important;
+        padding-top: 24px !important;
+      }
+    }
+  }
+  &__nav {
+    th.menu-item {
+      text-align: left;
+
+      a {
+        display: block;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        font-weight: 500;
+        line-height: 16px;
+        color: $secondary-color !important;
+        @media only screen and (max-width: #{$global-breakpoint}) {
+          text-align: center !important;
+        }
+      }
+    }
+  }
+  &__contacts-inner {
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      margin-top: 43px !important;
+      margin-bottom: 48px !important;
+    }
+  }
+  &__social-item {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 8px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__tel {
+    font-size: 18px;
+    font-weight: 500;
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      display: block;
+    }
+    &.first {
+      margin-bottom: 12px !important;
+    }
+    &.last {
+      margin-bottom: 16px !important;
+    }
+  }
+  &__copy {
+    p {
+      margin-bottom: 0;
+      color: $dark-gray;
+      font-size: 12px;
+      line-height: 16px;
+    }
+    span {
+      display: block;
+      margin-bottom: 8px;
+    }
+  }
+  &__help {
+    p {
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        line-height: 17px !important;
+        margin-bottom: 8px !important;
+      }
+    }
+  }
+}

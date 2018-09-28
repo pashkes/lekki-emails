@@ -1,0 +1,30 @@
+<spacer size="16"></spacer>
+<row class="product">
+    <columns class="product__col" large="2" small="4">
+        <img class="product__img" src={{ urlImg }} width="80" height="80" alt={{ name }}>
+    </columns>
+    <columns class="product__col" large="6" small="8" valign="middle">
+        <h3 class="product__name"><a href="#">{{ name }}</a></h3>
+        <p class="product__made">{{ made }}</p>
+    </columns>
+    <columns class="product__col row-cost" large="4" small="12" valign="middle">
+        <row>
+            <columns large="1" small="4"></columns>
+            <columns small="2" valign="middle"><p class="product__amount">{{ amount }}</p></columns>
+            <columns small="3" valign="middle"><p class="product__cost text-center">{{ cost }} <span>₽</span></p>
+            </columns>
+            <columns small="3" valign="middle"><p class="product__amount-cost text-right">{{ totalCost }} <span>₽</span>
+            </p></columns>
+        </row>
+    </columns>
+</row>
+<spacer size="16" class="show-for-large"></spacer>
+<spacer size="6" class="hide-xl"></spacer>
+
+<row>
+    <columns large="12">
+        <row>
+            <columns large="12" class="border"></columns>
+        </row>
+    </columns>
+</row>
