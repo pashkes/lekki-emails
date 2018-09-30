@@ -1,0 +1,230 @@
+<hr>
+<spacer size="43"></spacer>
+<container class="order-info">
+    <row>
+        <columns large="6">
+            <h2 class="order-info__title mb-reset ">Информация о заказе</h2>
+        </columns>
+        <columns large="6" class="order-info__status" valign="bottom">
+            <row>
+                <columns large="5" class="collapse">
+                    <p class="mb-reset small-text-left text-right" style="white-space: nowrap">
+                        <span class="text-sm-grey">Статус: </span>&#160;
+                        <span class="text-sm-default">Новый</span>
+                    </p>
+                </columns>
+                <columns large="7">
+                    <p class="mb-reset small-text-left text-right">
+                        <span class="text-sm-grey">Дата обновления: </span>
+                        <span class="text-sm-default">22.03.2018</span>
+                    </p>
+                </columns>
+            </row>
+        </columns>
+    </row>
+</container>
+<container>
+    <spacer size="18"></spacer>
+    {{>border}}
+    <spacer size="17"></spacer>
+    <row>
+        <columns>
+            <p class="order-info__number">№123456 от 22.03.2018</p>
+        </columns>
+    </row>
+    <row class="order-info__row-table">
+        <columns large="7" class="table-order-col">
+            <table>
+                <tbody>
+                <tr>
+                    <td>
+                        <span class="order-info__count">1. </span>
+                    </td>
+                    <td>
+                        <p class="order-info__name-product">Либридерм витамин F бальзам питательный для кожи головы и
+                            волос
+                            200мл</p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </columns>
+        <columns>
+            <row class="collapse">
+                <columns small="4"><p class="small-padding-left text-grey small-text-left text-right mb-reset">195
+                    <span>₽</span></p></columns>
+                <columns small="4"><p class="sm-pl text-grey small-text-left text-right mb-reset">2 шт.</p></columns>
+                <columns small="4"><p class="cost-order text-right mb-reset">290 <span>₽</span></p></columns>
+            </row>
+        </columns>
+    </row>
+    <row class="order-info__row-table">
+        <columns large="7" class="table-order-col">
+            <table>
+                <tbody>
+                <tr>
+                    <td>
+                        <span class="order-info__count">2. </span>
+                    </td>
+                    <td>
+                        <p class="order-info__name-product">Генеролон спрей для наружного еприменения 5% 60мле</p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </columns>
+        <columns>
+            <row class="collapse">
+                <columns small="4"><p class="small-padding-left small-text-left text-grey text-right mb-reset">616
+                    <span>₽</span></p></columns>
+                <columns small="4"><p class="sm-pl text-grey text-right small-text-left mb-reset">1 шт.</p></columns>
+                <columns small="4"><p class="cost-order text-right mb-reset">616 <span>₽</span></p></columns>
+            </row>
+        </columns>
+    </row>
+    <row class="order-info__row-table">
+        <columns large="7" class="table-order-col">
+            <table>
+                <tbody>
+                <tr>
+                    <td>
+                        <span class="order-info__count">3. </span>
+                    </td>
+                    <td>
+                        <p class="order-info__name-product">Виши лифтактив эдвансд набор 8 марта 2016 флюид легкий
+                            30мл+лосьон
+                            мицеллярный 200мл</p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </columns>
+        <columns>
+            <row class="collapse">
+                <columns small="4"><p class="small-padding-left small-text-left text-grey text-right mb-reset">800
+                    <span>₽</span></p></columns>
+                <columns small="4"><p class="sm-pl text-grey text-right small-text-left mb-reset">1 шт.</p></columns>
+                <columns small="4"><p class="cost-order text-right mb-reset">800 <span>₽</span></p></columns>
+            </row>
+        </columns>
+    </row>
+    <row class="order-info__row-table last">
+        <columns large="7" class="table-order-col">
+            <table>
+                <tbody>
+                <tr>
+                    <td>
+                        <span class="order-info__count">4. </span>
+                    </td>
+                    <td>
+                        <p class="order-info__name-product mb-reset">Урьяж розельян крем для кожи склонной к куперозу
+                            40мл</p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </columns>
+        <columns>
+            <row class="collapse">
+                <columns small="4"><p class="small-padding-left small-text-left text-grey text-right mb-reset">476
+                    <span>₽</span></p></columns>
+                <columns small="4"><p class="sm-pl text-grey text-right small-text-left mb-reset">1 шт.</p></columns>
+                <columns small="4"><p class="cost-order text-right mb-reset">476 <span>₽</span></p></columns>
+            </row>
+        </columns>
+    </row>
+</container>
+<spacer size="18" class="show-for-large"></spacer>
+
+<container class="order-info__total">
+    {{>border}}
+    <spacer size="17"></spacer>
+    <row>
+        <columns>
+            <spacer size="6"></spacer>
+            <img src="assets/img/bar.png" class="bar-code small-float-center" width="272" height="84" alt="bar code">
+        </columns>
+        <columns>
+            <table valign="top">
+                <tbody>
+                <tr>
+                    <td><p class="bar-first-td">Стоимость:</p></td>
+                    <td class="text-right medium-weight">9 700 <span>₽</span></td>
+                </tr>
+                <tr>
+                    <td><p class="bar-first-td">Доставка:</p></td>
+                    <td class="text-right medium-weight">200 <span>₽</span></td>
+                </tr>
+                <tr>
+                    <td><p class="bar-first-td">Промокод: скидка 10%</p></td>
+                    <td class="text-right medium-weight">-900 <span>₽</span></td>
+                </tr>
+                <tr>
+                    <td><p class="bar-first-td last">Оплата бонусами:</p></td>
+                    <td class="text-right medium-weight">-160</td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td><p class="bar-first-td medium-weight">Итого:</p></td>
+                    <td>
+                        <p class="order-info__total-cost mb-reset medium-weight secondary text-right">8 870
+                            <span>₽</span></p>
+                        <p class="medium-font-size medium-weight text-right mb-reset">+ 887 бонусов</p>
+                    </td>
+                </tr>
+                </tfoot>
+            </table>
+        </columns>
+    </row>
+    <spacer size="18"></spacer>
+    {{>border}}
+    <spacer size="20"></spacer>
+    <row>
+        <columns>
+            <h3 class="order-info__subtitle ">Контактные данные</h3>
+            <p class="large-line-height">
+                Константин Константинопольский Константинов
+                <br>
+                konstantin@mail.ru
+                <br>
+                +7 905 123-45-67
+            </p>
+            <hr class="show-small">
+        </columns>
+        <columns>
+            <spacer size="20" class="show-small"></spacer>
+            <h3 class="order-info__subtitle">Комментарий к заказу</h3>
+            <p>Запаковать в двойной пакет</p>
+            <spacer size="6" class="show-small"></spacer>
+        </columns>
+    </row>
+    {{#unlesspage 'order'}}
+        <spacer size="38"></spacer>
+    {{/unlesspage}}
+    {{#ifpage 'order-formed-delivery' 'order-delivery'}}
+    <spacer size="8"></spacer>
+    {{>border}}
+    <spacer size="20"></spacer>
+    <row>
+        <columns large="8">
+            <h3 class="order-info__subtitle receive">Получение заказа</h3>
+            <p class="delivery-text">Доставка курьером <span class="secondary">aпреля 2018</span></p>
+            <table>
+                <tbody>
+                <tr>
+                    <td class="uppercase">Адрес:</td>
+                    <td>Климентовский переулок 12, строение 1</td>
+                </tr>
+                <tr>
+                    <td class="uppercase td last">время:</td>
+                    <td class="td last">09:00—21:00</td>
+                </tr>
+                </tbody>
+            </table>
+        </columns>
+        <columns></columns>
+    </row>
+    <spacer size="42"></spacer>
+    {{/ifpage}}
+</container>

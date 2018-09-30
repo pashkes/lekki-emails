@@ -1,12 +1,38 @@
 <wrapper class="footer">
-    {{#unlesspage 'auto-response' 'left-card' 'no-response' 'special-offer' 'email-confirmation'}}
+    {{#unlesspage
+        'auto-response'
+        'left-card'
+        'no-response'
+        'special-offer'
+        'email-confirmation'
+        'order-formed-delivery'
+        'order-12-hours'
+        'order'
+        'order-delivery'
+        'order-finished'
+        'order-formed-vyvoz'
+        'order-punkt-vydachy'
+    }}
         <hr/>
     {{/unlesspage}}
     <container>
-        {{#unlesspage 'auto-response' 'left-card'  'no-response' 'special-offer' 'email-confirmation'}}
+        {{#unlesspage
+            'auto-response'
+            'left-card'
+            'no-response'
+            'special-offer'
+            'email-confirmation'
+            'order-formed-delivery'
+            'order-12-hours'
+            'order'
+            'order-delivery'
+            'order-finished'
+            'order-formed-vyvoz'
+            'order-punkt-vydachy'
+        }}
             <spacer size="40"></spacer>
         {{/unlesspage}}
-        {{#ifpage 'email-confirmation' }}
+        {{#ifpage 'email-confirmation' 'order-formed-delivery' 'special-offer' 'password-change' 'review-promo' 'registration' 'auto-response'}}
         <spacer size="10"></spacer>
         {{/ifpage}}
         <p class="footer__load-text text-center">Загрузи приложение, получи Cashback 15%</p>

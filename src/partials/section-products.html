@@ -1,0 +1,28 @@
+<hr>
+<container class="custom-container">
+    <spacer size="43"></spacer>
+    <h1 class="title-md text-center">Популярные товары</h1>
+    <spacer size="12" class="show-for-large"></spacer>
+    <row>
+        {{>product-card
+        url="assets/img/product-1.jpg"
+        name="Нурофен 0,1/5мл Суспензия Апельсин 200мл"
+        made="Reckitt Benckiser (Великобритания)"
+        oldCost="800"
+        cost="695"
+        discount="-15%"
+        }}
+        {{>product-card
+        url="assets/img/product-2.jpg"
+        name="Террафлекс капсулы №200"
+        made="Яндран (Хорватия)"
+        cost="3 195"
+        }}
+        {{>product-card
+        url="assets/img/product-3.jpg"
+        name="Аква марис спрей назальный 30мл"
+        made="Яндран (Хорватия)"
+        cost="195"
+        }}
+    </row>
+</container>

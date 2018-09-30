@@ -1,0 +1,144 @@
+.order-info {
+  &__title {
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+  }
+  &__subtitle {
+    margin-bottom: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    &.receive {
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        margin-bottom: 5px !important;
+      }
+    }
+  }
+  &__row-table {
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      margin-bottom: 13px;
+    }
+    &.last {
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        margin-bottom: 0px !important;
+      }
+    }
+  }
+  &__status {
+    p {
+      padding-bottom: 3px;
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        padding-bottom: 0 !important;
+      }
+    }
+  }
+  &__number {
+    margin-bottom: 14px;
+    font-weight: 500;
+    font-size: 16px;
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      margin-top: 8px !important;
+    }
+  }
+  &__count {
+    padding-right: 15px;
+    font-size: 14px;
+  }
+  &__name-product {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 11px;
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      margin-bottom: 3px !important;
+    }
+  }
+  &__total-cost {
+    font-size: 18px !important;
+  }
+}
+
+.cost-order {
+  font-weight: 500 !important;
+  span {
+    font-size: 11px !important;
+  }
+}
+
+.bar-code {
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    margin-bottom: 22px !important;
+  }
+}
+
+.table-order-col.large-7.columns.first {
+  width: 425px;
+}
+
+.text-grey {
+  color: $dark-gray !important;
+  font-size: 14px !important;
+  span {
+    font-size: 11px !important;
+  }
+}
+
+.bar-first-td {
+  padding-left: 12px;
+  margin-bottom: 6px;
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    padding-left: 0 !important;
+  }
+  &.last {
+    margin-bottom: 29px;
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      margin-bottom: 23px !important;
+    }
+  }
+}
+.name-pharmacy {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.medium-font-size {
+  font-size: 13px;
+}
+
+.large-line-height {
+  line-height: 22px !important;
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    margin-bottom: 15px !important;
+  }
+}
+
+.delivery-text {
+  margin-bottom: 12px;
+}
+
+.uppercase {
+  line-height: 22px !important;
+  text-transform: uppercase !important;
+  color: $dark-gray !important;
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    padding-right: 6px !important;
+  }
+}
+.td {
+  &.last {
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      padding-top: 6px !important;
+    }
+  }
+}
+.small-padding-left {
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    padding-left: 24px !important;
+  }
+}
+.sm-pl {
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    padding-left: 14px !important;
+  }
+}

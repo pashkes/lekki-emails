@@ -6,6 +6,7 @@ body,
 html,
 .body {
   background: #fff !important;
+  color: $primary-color;
 }
 
 .container.header {
@@ -67,6 +68,12 @@ p {
   }
   p {
     line-height: 18px;
+  }
+  .paragraph-medium-width {
+    width: 430px;
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      width: auto !important;
+    }
   }
   .mb-reset {
     margin: 0 !important;
@@ -210,7 +217,12 @@ table.btn-secondary.button {
 table.btn-secondary.button table td {
   background-color: #fff;
 }
-
+.show-small {
+  display: none;
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    display: block !important;
+  }
+}
 .h2 {
   font-size: 24px !important;
   font-weight: 500;
@@ -220,7 +232,11 @@ table.btn-secondary.button table td {
     line-height: 28px !important;
   }
 }
-
+.small-text-left {
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    text-align: left !important;
+  }
+}
 .title-md {
   font-size: 16px;
   font-weight: 500;
@@ -244,9 +260,34 @@ table.btn-secondary.button table td {
 .text-sm-grey {
   font-size: 12px;
   line-height: 16px;
-  color: #9b9b9b;
+  color: $dark-gray;
 }
-
+.text-sm-default {
+  font-size: 12px;
+  line-height: 16px;
+}
+.medium-weight {
+  font-weight: 500 !important;
+  span {
+    font-size: 11px !important;
+  }
+}
+.alert {
+  padding: 12px 21px 12px 38px;
+  border: dashed 1px #ea2b16 !important;
+  border-radius: $global-radius;
+  letter-spacing: -0.2px;
+  line-height: 14px !important;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAARZJREFUeNqMkM9KAlEUh2dkQFqoC0Fo0wPoIsG9QWIPYBASCG5tQAR1O/gABjIo6LYgiCAKeoE2QUvBwHWLBmdniyAQ6rtyBL1cYQ58nDN3zu/8sy2DhblMAefBArqZj3Cp58QMogTuGQ6gDGNT8ZjhTXWy4RzqUKXYqZ5ka92yuCnUpOsv3MIx5Bl5ta/jEN7gHp6gBR04gqZxVLpVcUVwqfyHj0OSOMD3FOQc7gjlINfgkzgz7O3DJ/T1jp7Eva3kCTyqQHZz4ZImJ2uhHGS9CwnfW8IS5DYf/HuV3UdoHIdgIAe508YbwZf21oY5NGzU6hAXVHywIhj5N7i0Er4QnMGPFc1ScKVGrcg+8YjCgOne/wUYAHCwTpGbClitAAAAAElFTkSuQmCC')
+;
+  background-repeat: no-repeat;
+  background-position: 14px center;
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    padding: 27px 42px 17px !important;
+    text-align: center !important;
+    background-position: center 13px !important;
+  }
+}
 .recently-product {
   &__cart {
     @media only screen and (max-width: #{$global-breakpoint}) {
@@ -340,13 +381,15 @@ table.small-expanded.button {
   display: table-cell !important;
   &--special-offer {
     .birthday__inner {
-      background: url(assets/img/spec-offer.png) center no-repeat !important;
+      background-image: url(assets/img/spec-offer.png) !important;
     }
   }
   &__inner {
     height: 293px !important;
     vertical-align: middle;
-    background: url(assets/img/birthday.png) center no-repeat;
+    background-image: url(assets/img/birthday.png);
+    background-position: center center;
+    background-repeat: no-repeat;
     background-size: cover;
     .wrapper-inner {
       vertical-align: middle;
@@ -396,7 +439,7 @@ table.bg-wide-mobile.container {
   @media only screen and (max-width: #{$global-breakpoint}) {
     max-width: 273px !important;
     margin-bottom: 19px !important;
-    background-size: 272px 172px !important;
+    background-image: url(assets/img/virtual-card-sm.png) !important;
   }
   &__inner {
     @media only screen and (max-width: #{$global-breakpoint}) {
@@ -436,7 +479,9 @@ table.bg-wide-mobile.container {
     font-size: 14px;
   }
 }
-
+.reset-line-height {
+  line-height: 1;
+}
 .text-large-xl {
   font-size: 18px;
   font-weight: 500;
