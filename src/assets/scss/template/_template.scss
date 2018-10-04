@@ -8,7 +8,9 @@ html,
   background: #fff !important;
   color: $primary-color;
 }
-
+.text-center-i {
+  text-align: center !important;
+}
 .container.header {
   background: #f3f3f3;
 }
@@ -75,9 +77,7 @@ p {
       width: auto !important;
     }
   }
-  .mb-reset {
-    margin: 0 !important;
-  }
+
   .mb-reset-mobile {
     @media only screen and (max-width: #{$global-breakpoint}) {
       margin: 0 !important;
@@ -105,7 +105,9 @@ p {
     }
   }
 }
-
+.mb-reset {
+  margin-bottom: 0 ;
+}
 .hand {
   @media only screen and (max-width: #{$global-breakpoint}) {
     margin-top: 16px !important;
@@ -152,7 +154,11 @@ hr {
     display: inline !important;
   }
 }
-
+.button.expanded {
+  td:not(.expander) {
+    width: 100%;
+  }
+}
 .table-row {
   font-size: 0;
   margin-bottom: 6px;
@@ -165,9 +171,10 @@ hr {
 }
 
 table.button.primary {
-  width: 288px;
+  td, tbody, tr {
+    text-align: center !important;
+  }
   a {
-    display: block;
     text-align: center;
     letter-spacing: 0.8px;
   }
@@ -191,14 +198,19 @@ table.button.primary {
 }
 
 
-
+.show-sm {
+  display: none;
+  @media only screen and (max-width: #{$global-breakpoint}) {
+      display: table !important;
+  }
+}
 
 table.btn-secondary.button table td a {
   color: $primary-color !important;
   width: 126px;
-  border: 1px solid $medium-gray;
+  border: 1px solid $medium-gray !important;
   text-align: center;
-  padding: 9px 34px 9px 34px !important;
+  //padding: 9px 34px 9px 34px !important;
 
 }
 table.btn-secondary.button.btn-secondary--wide table td a {
@@ -218,7 +230,9 @@ table.btn-secondary.button table td {
   background-color: #fff;
 }
 .show-small {
-  display: none;
+  display: none !important;
+  line-height: 0;
+  font-size: 0;
   @media only screen and (max-width: #{$global-breakpoint}) {
     display: block !important;
   }
@@ -278,8 +292,7 @@ table.btn-secondary.button table td {
   border-radius: $global-radius;
   letter-spacing: -0.2px;
   line-height: 14px !important;
-  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAARZJREFUeNqMkM9KAlEUh2dkQFqoC0Fo0wPoIsG9QWIPYBASCG5tQAR1O/gABjIo6LYgiCAKeoE2QUvBwHWLBmdniyAQ6rtyBL1cYQ58nDN3zu/8sy2DhblMAefBArqZj3Cp58QMogTuGQ6gDGNT8ZjhTXWy4RzqUKXYqZ5ka92yuCnUpOsv3MIx5Bl5ta/jEN7gHp6gBR04gqZxVLpVcUVwqfyHj0OSOMD3FOQc7gjlINfgkzgz7O3DJ/T1jp7Eva3kCTyqQHZz4ZImJ2uhHGS9CwnfW8IS5DYf/HuV3UdoHIdgIAe508YbwZf21oY5NGzU6hAXVHywIhj5N7i0Er4QnMGPFc1ScKVGrcg+8YjCgOne/wUYAHCwTpGbClitAAAAAElFTkSuQmCC')
-;
+  background-image: url('https://s3.eu-west-3.amazonaws.com/pashkes/alarm.png');
   background-repeat: no-repeat;
   background-position: 14px center;
   @media only screen and (max-width: #{$global-breakpoint}) {
@@ -288,6 +301,20 @@ table.btn-secondary.button table td {
     background-position: center 13px !important;
   }
 }
+.width {
+  width: 100%;
+}
+.status-table {
+   & > tbody > tr > td {
+    padding-right: 12px;
+    padding-left: 12px;
+     vertical-align: middle !important;
+     @media only screen and (max-width: #{$global-breakpoint}) {
+       display: block;
+     }
+  }
+}
+
 .recently-product {
   &__cart {
     @media only screen and (max-width: #{$global-breakpoint}) {
@@ -299,7 +326,8 @@ table.btn-secondary.button table td {
   }
   &__name {
     margin-bottom: 2px;
-    line-height: 18px;
+    font-size: 14px !important;
+    line-height: 0 !important;
     a {
       text-decoration: none;
       color: $primary-color !important;
@@ -311,8 +339,22 @@ table.btn-secondary.button table td {
       }
     }
   }
+  &__made {
+    color: $dark-gray !important;
+    font-size: 12px !important;
+  }
 }
+.float-left {
+  float: left;
+  @media only screen and (max-width: #{$global-breakpoint}) {
 
+  }
+}
+//.pr-menu {
+//  @media only screen and (max-width: #{$global-breakpoint}) {
+//    padding-right: 11% !important;
+//  }
+//}
 table.small-expanded.button {
   @media only screen and (max-width: #{$global-breakpoint}) {
     width: 100% !important;
@@ -321,8 +363,9 @@ table.small-expanded.button {
       width: 100% !important;
 
       a {
+        display: block !important;
         text-align: center !important;
-        width: 100% !important;
+        width: auto !important;
         padding-left: 0 !important;
         padding-right: 0 !important;
       }
@@ -338,19 +381,23 @@ table.small-expanded.button {
   text-decoration: underline;
 }
 
-.list-item {
-  margin-bottom: 4px;
-  @media only screen and (max-width: #{$global-breakpoint}) {
-    margin-bottom: 9px !important;
-    line-height: 1 !important;
-  }
-  &__img {
-    display: inline-block;
-    padding-right: 6px;
-    vertical-align: sub;
+
+.list-table-check {
+  td {
+    padding-bottom: 4px;
+    vertical-align: middle;
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      padding-bottom: 9px !important;
+      line-height: 1 !important;
+    }
   }
 }
-
+.margin-reset {
+  margin: 0 !important;
+}
+.list-icon {
+  width: 24px;
+}
 .list {
   margin: 0;
   padding: 0;
@@ -381,13 +428,13 @@ table.small-expanded.button {
   display: table-cell !important;
   &--special-offer {
     .birthday__inner {
-      background-image: url(assets/img/spec-offer.png) !important;
+      background-image: url(https://s3.eu-west-3.amazonaws.com/pashkes/spec-offer.png) !important;
     }
   }
   &__inner {
     height: 293px !important;
     vertical-align: middle;
-    background-image: url(assets/img/birthday.png);
+    background-image: url(https://s3.eu-west-3.amazonaws.com/pashkes/birthday.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -433,19 +480,22 @@ table.bg-wide-mobile.container {
   margin-left: auto;
   height: 182px;
   padding: 25px;
-  background-image: url(assets/img/virtual-card.png);
+  background-color: #F1F1F1;
+  background-image: url(https://s3.eu-west-3.amazonaws.com/pashkes/virtual-card.jpg);
   background-position: 0 0;
   background-repeat: no-repeat;
   @media only screen and (max-width: #{$global-breakpoint}) {
+    background-color: #ffffff !important;
     max-width: 273px !important;
     margin-bottom: 19px !important;
-    background-image: url(assets/img/virtual-card-sm.png) !important;
+    background-image: url(https://s3.eu-west-3.amazonaws.com/pashkes/virtual-card-sm.jpg) !important;
   }
   &__inner {
     @media only screen and (max-width: #{$global-breakpoint}) {
       margin-top: 84px !important;
     }
   }
+
   .table-row {
     max-width: 264px;
     margin-bottom: 13px;
@@ -467,6 +517,22 @@ table.bg-wide-mobile.container {
     @media only screen and (max-width: #{$global-breakpoint}) {
       display: inline-block !important;
       width: 73% !important;
+    }
+  }
+  .virtual-card-th {
+    padding-left: 24px;
+    width: 24%;
+    padding-bottom: 12px;
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      padding-left: 16px !important;
+      width: 21%!important;
+    }
+    & + .table-td {
+      width: 59%;
+      padding-bottom: 12px;
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        width: 69% !important;
+      }
     }
   }
 }

@@ -10,25 +10,7 @@
       line-height: 1.2 !important;
     }
   }
-  &__btn-first {
-    display: block;
-    vertical-align: top;
-    margin-right: 14px;
-    @media only screen and (max-width: #{$global-breakpoint}) {
-      margin-right: 0 !important;
-    }
-  }
-  &__btn-second {
-    display: block;
-    vertical-align: top;
-    img {
-      padding-left: 24px;
-      @media only screen and (max-width: #{$global-breakpoint}) {
-        padding-left: 0 !important;
-        padding-top: 24px !important;
-      }
-    }
-  }
+
   &__nav {
     th.menu-item {
       text-align: left;
@@ -46,19 +28,22 @@
       }
     }
   }
+  &__contacts {
+    .wrapper-inner {
+      background-color: #f1f1f1 !important;
+    }
+  }
   &__contacts-inner {
     @media only screen and (max-width: #{$global-breakpoint}) {
       margin-top: 43px !important;
       margin-bottom: 48px !important;
     }
+
   }
   &__social-item {
     display: inline-block;
     vertical-align: top;
     margin-right: 8px;
-    &:last-child {
-      margin-right: 0;
-    }
   }
   &__tel {
     font-size: 18px;
@@ -92,5 +77,55 @@
         margin-bottom: 8px !important;
       }
     }
+  }
+}
+.first-app {
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    margin-bottom: 24px !important;
+  }
+}
+.second-app {
+  margin-left: 19px;
+   @media only screen and (max-width: #{$global-breakpoint}) {
+     margin-left: 0 !important;
+   }
+}
+
+.first-app {
+  margin-right: 19px;
+   @media only screen and (max-width: #{$global-breakpoint}) {
+     margin-right: 0 !important;
+   }
+}
+.menu-footer {
+  width: 100%;
+  vertical-align: top !important;
+  td {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    vertical-align: top !important;
+  }
+  a {
+    color: $secondary-color !important;
+    font-weight: 500 !important;
+    line-height: 16px !important;
+    text-decoration: none !important;
+  }
+}
+.social {
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    width: auto !important;
+  }
+}
+.list-custom-circle {
+  td {
+    vertical-align: baseline !important;
+  }
+  img {
+    display: inline !important;
+  }
+  td:nth-child(1) {
+    width: 24px !important;
+    padding-bottom: 6px !important;
   }
 }

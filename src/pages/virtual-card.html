@@ -10,21 +10,30 @@
             </columns>
         </row>
         <row>
-            <columns></columns>
-            <columns large="4">
+            <columns large="2"></columns>
+            <columns large="8">
                 <wrapper class="virtual-card">
                     <wrapper class="virtual-card__inner">
                         <spacer size="92" class="show-for-large"></spacer>
-                        <p class="table-row"><span class="table-th">логин: </span>
-                            <b class="table-td">svetlana.lavrova@mail.ru</b></p>
-                        <p class="table-row">
-                            <span class="table-th">Пароль: </span>
-                            <b class="table-td">112233 <a href="#">изменить</a></b></p></wrapper></wrapper>
-                <spacer size="49" class="show-for-large"></spacer>
-                {{>btn title="Перейти к покупкам"}}
+                        <table class="width">
+                            <tbody>
+                            <tr>
+                                <td class="table-th virtual-card-th">логин:</td>
+                                <td class="table-td"><b>svetlana.lavrova@mail.ru</b></td>
+                            </tr>
+                            <tr>
+                                <td class="table-th virtual-card-th">Пароль:</td>
+                                <td class="table-td"><b>112233 <a href="#" target="_blank">изменить</a></b></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </wrapper>
+                </wrapper>
             </columns>
-            <columns></columns>
+            <columns large="2"></columns>
         </row>
+        <spacer size="49" class="show-for-large"></spacer>
+        {{>btn title="Перейти к покупкам"}}
         <spacer size="48"></spacer>
     </container>
 </wrapper>

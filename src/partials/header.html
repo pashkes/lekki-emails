@@ -1,42 +1,57 @@
 <wrapper class="header">
     <wrapper class="header__top-panel">
         <wrapper class="header__top-panel-inner">
+            <spacer class="show-for-large" size="10" ></spacer>
             <container>
                 <row>
                     <columns large="12" small="12">
-                        <menu class="header__menu menu">
-                            <item href="{{root}}" class="menu__item">Каталог товаров</item>
-                            <item href="{{root}}" class="menu__item">Акции</item>
-                            <item href="{{root}}" class="menu__item">Доставка</item>
-                            <item href="{{root}}" class="menu__item">Оплата</item>
-                            <item href="{{root}}" class="menu__item header__profile">
-                                <img src="assets/img/icons/user.png" width="15" height="17" alt="user">
-                                Личный кабинет
-                            </item>
-                        </menu>
+                            <menu class="header__menu menu">
+                                <item href="{{root}}" class="menu__item first"><span>Каталог товаров</span></item>
+                                <item href="{{root}}" class="menu__item second"><span>Акции</span></item>
+                                <item href="{{root}}" class="menu__item third pr-reset-sm"><span class="pr-reset">Доставка</span></item>
+                                <item href="{{root}}" class="menu__item pr-menu pr-reset"><span class="pr-reset">Оплата</span></item>
+                                <item href="{{root}}" class="menu__item header__profile pr-reset">
+                                    <table>
+                                        <tbody>
+                                        <th><img src="https://s3.eu-west-3.amazonaws.com/pashkes/user.png" width="15"
+                                                 height="17"
+                                                 alt="user"></th>
+                                        <th>
+                                            Личный кабинет
+                                        </th>
+                                        </tbody>
+                                    </table>
+                                </item>
+                            </menu>
                     </columns>
                 </row>
             </container>
+            <spacer  class="show-for-large" size="10"></spacer>
         </wrapper>
     </wrapper>
-        <container>
-            <wrapper class="header__bottom-panel">
-                <spacer size="13" class="show-for-large"></spacer>
-                <row>
-                    <columns small="6" large="3">
-                        <a href="#"><img src="assets/img/logo.png" alt="Lekki - Интернет-аптека" width="145"
-                                         height="46"></a>
-                    </columns>
-                    <columns small="6" large="3">
-                        <p class="header__contact text-right">
-                            <a href="tel:+74950035555" class="header__tel primary">+7 495 003-55-55</a>
-                            <span class="header__sub-text">Круглосуточно</span>
-                        </p>
-                    </columns>
-                </row>
-                <spacer size="13" class="show-for-large"></spacer>
-            </wrapper></container>
-
-    <hr />
+    <container>
+        <wrapper class="header__bottom-panel">
+            <spacer size="13" class="show-for-large"></spacer>
+            <row>
+                <columns small="6" large="3">
+                    <wrapper class="header__logo">
+                        <a href="#" target="_blank">
+                            <img src="https://s3.eu-west-3.amazonaws.com/pashkes/logo@2x.png" alt="Lekki - Интернет-аптека" width="145" height="46">
+                        </a>
+                    </wrapper>
+                </columns>
+                <columns small="6" large="3" class="pl-reset">
+                    <p class="text-right header__tel reset-line-height mb-reset">
+                        <a href="tel:+74950035555" class="primary">+7 495 003-55-55</a>
+                    </p>
+                    <p class="text-right mb-reset">
+                        <span class="header__sub-text">Круглосуточно</span>
+                    </p>
+                </columns>
+            </row>
+            <spacer size="13" class="show-for-large"></spacer>
+        </wrapper>
+    </container>
+    <hr/>
 </wrapper>
 

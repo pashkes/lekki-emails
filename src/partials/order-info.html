@@ -1,27 +1,27 @@
 <hr>
 <spacer size="43"></spacer>
 <container class="order-info">
-    <row>
-        <columns large="6">
-            <h2 class="order-info__title mb-reset ">Информация о заказе</h2>
-        </columns>
-        <columns large="6" class="order-info__status" valign="bottom">
-            <row>
-                <columns large="5" class="collapse">
-                    <p class="mb-reset small-text-left text-right" style="white-space: nowrap">
-                        <span class="text-sm-grey">Статус: </span>&#160;
-                        <span class="text-sm-default">Новый</span>
-                    </p>
-                </columns>
-                <columns large="7">
-                    <p class="mb-reset small-text-left text-right">
-                        <span class="text-sm-grey">Дата обновления: </span>
-                        <span class="text-sm-default">22.03.2018</span>
-                    </p>
-                </columns>
-            </row>
-        </columns>
-    </row>
+    <table class="width status-table">
+        <tbody>
+        <tr>
+            <td>
+                <h2 class="order-info__title mb-reset ">Информация о заказе</h2>
+            </td>
+            <td class="pr-reset" valign="bottom">
+                <p class="mb-reset small-text-left text-right ">
+                    <span class="text-sm-grey">Статус: </span>&#160;
+                    <span class="text-sm-default">Новый</span>
+                </p>
+            </td>
+            <td valign="bottom">
+                <p class="mb-reset small-text-left text-right">
+                    <span class="text-sm-grey">Дата обновления: </span>
+                    <span class="text-sm-default">22.03.2018</span>
+                </p>
+            </td>
+        </tr>
+        </tbody>
+    </table>
 </container>
 <container>
     <spacer size="18"></spacer>
@@ -37,8 +37,8 @@
             <table>
                 <tbody>
                 <tr>
-                    <td>
-                        <span class="order-info__count">1. </span>
+                    <td class="order-info__count">
+                        <span>1. </span>
                     </td>
                     <td>
                         <p class="order-info__name-product">Либридерм витамин F бальзам питательный для кожи головы и
@@ -63,8 +63,8 @@
             <table>
                 <tbody>
                 <tr>
-                    <td>
-                        <span class="order-info__count">2. </span>
+                    <td class="order-info__count">
+                        <span>2. </span>
                     </td>
                     <td>
                         <p class="order-info__name-product">Генеролон спрей для наружного еприменения 5% 60мле</p>
@@ -87,8 +87,8 @@
             <table>
                 <tbody>
                 <tr>
-                    <td>
-                        <span class="order-info__count">3. </span>
+                    <td class="order-info__count">
+                        <span>3. </span>
                     </td>
                     <td>
                         <p class="order-info__name-product">Виши лифтактив эдвансд набор 8 марта 2016 флюид легкий
@@ -113,8 +113,8 @@
             <table>
                 <tbody>
                 <tr>
-                    <td>
-                        <span class="order-info__count">4. </span>
+                    <td class="order-info__count">
+                        <span>4. </span>
                     </td>
                     <td>
                         <p class="order-info__name-product mb-reset">Урьяж розельян крем для кожи склонной к куперозу
@@ -142,7 +142,8 @@
     <row>
         <columns>
             <spacer size="6"></spacer>
-            <img src="assets/img/bar.png" class="bar-code small-float-center" width="272" height="84" alt="bar code">
+            <img src="https://s3.eu-west-3.amazonaws.com/pashkes/bar.png" class="bar-code small-float-center"
+                 width="272" height="84" alt="bar code">
         </columns>
         <columns>
             <table valign="top">
@@ -181,7 +182,7 @@
     {{>border}}
     <spacer size="20"></spacer>
     <row>
-        <columns>
+        <columns valign="top">
             <h3 class="order-info__subtitle ">Контактные данные</h3>
             <p class="large-line-height">
                 Константин Константинопольский Константинов
@@ -190,17 +191,15 @@
                 <br>
                 +7 905 123-45-67
             </p>
-            <hr class="show-small">
         </columns>
-        <columns>
-            <spacer size="20" class="show-small"></spacer>
-            <h3 class="order-info__subtitle">Комментарий к заказу</h3>
+        <columns valign="top">
+            <h3 class="order-info__subtitle order-info-pd-top">Комментарий к заказу</h3>
             <p>Запаковать в двойной пакет</p>
             <spacer size="6" class="show-small"></spacer>
         </columns>
     </row>
-    {{#unlesspage 'order'}}
-        <spacer size="38"></spacer>
+    {{#unlesspage 'order' 'order-delivery'}}
+    <spacer size="38"></spacer>
     {{/unlesspage}}
     {{#ifpage 'order-formed-delivery' 'order-delivery'}}
     <spacer size="8"></spacer>

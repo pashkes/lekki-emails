@@ -97,7 +97,7 @@ $stat-font-size: 40px;
 $button-padding: (
   tiny: 4px 8px 4px 8px,
   small: 5px 10px 5px 10px,
-  default: 10px 32px 10px 32px,
+  default: 10px 23px 10px 23px,
   large: 10px 34px 10px 34px,
 );
 $button-font-size: (
@@ -132,7 +132,7 @@ $callout-border-alert: 1px solid darken($alert-color, 20%);
 // -------
 
 $menu-item-padding: 0;
-$menu-item-gutter: 32px;
+$menu-item-gutter: 18px;
 $menu-item-color: #fff;
 
 // 8. Thumbnail

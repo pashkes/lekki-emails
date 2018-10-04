@@ -1,46 +1,33 @@
 .header .columns {
   padding-bottom: 0;
 }
+
 table.header {
   color: #fff;
   th.menu-item {
-    padding-right: 19px;
-    @media only screen and (max-width: #{$global-breakpoint}) {
-      padding-right: 30px !important;
-    }
-    &:nth-child(3) {
-      @media only screen and (max-width: #{$global-breakpoint}) {
-        padding-right: 0 !important;
-      }
-    }
-    &:last-child {
-      float: right;
-      padding-right: 0 !important;
-    }
+    //padding-right: 19px;
     a {
+      span {
+        @media only screen and (max-width: #{$global-breakpoint}) {
+          display: block;
+          padding-right: 0px;
+        }
+      }
       display: block;
-      padding-top: 10px;
-      padding-bottom: 10px;
       font-size: 13px;
       font-weight: 500;
-      &:hover {
-        color: $secondary-color !important;
-      }
       @media only screen and (max-width: #{$global-breakpoint}) {
-        padding-top: 6px !important;
-        padding-bottom: 6px !important;
         letter-spacing: 0 !important;
-      }
-      &:last-child {
-        padding-right: 0;
       }
     }
   }
+
 }
 
 .header .container {
   background: transparent;
 }
+
 .header {
   &__top-panel {
     background: $black;
@@ -50,12 +37,9 @@ table.header {
   }
   &__top-panel-inner {
     @media only screen and (max-width: #{$global-breakpoint}) {
-      max-width: 320px !important;
+      max-width: 340px !important;
       width: 100%;
-      margin-right: auto !important;
-      margin-left: auto !important;
-      margin-top: 4px !important;
-      margin-bottom: 4px !important;
+      margin: 0 auto !important;
     }
   }
   &__bottom-panel {
@@ -64,24 +48,34 @@ table.header {
       margin-bottom: 16px !important;
     }
   }
-  &__contact {
-    margin-bottom: 0;
+
+  &__logo {
+    width: 145px;
+    height: 48px;
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      width: 128px !important;
+      height: 41px !important;
+    }
   }
   &__tel {
-    font-size: 18px;
-    font-weight: 500;
+    margin-bottom: 0;
     @media only screen and (max-width: #{$global-breakpoint}) {
-      display: inline-block;
       margin-bottom: 3px !important;
-      font-size: 14px !important;
+    }
+    a {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1 !important;
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        font-size: 14px !important;
+      }
     }
   }
   &__sub-text {
     display: block;
-    margin-top: -6px;
     color: $dark-gray;
     font-size: 13px;
-    @media only screen and (max-width: #{$global-breakpoint}){
+    @media only screen and (max-width: #{$global-breakpoint}) {
       margin-top: -3px !important;
       font-size: 12px !important;
     }
@@ -89,27 +83,43 @@ table.header {
   &__profile {
     margin-bottom: 0;
     text-align: right;
+    float: right !important;
+    padding-left: 130px;
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      padding-left: 0 !important;
+    }
+    th {
+      color: #fff !important;
+      font-weight: 500;
+      font-size: 13px;
+      &:first-child {
+        padding-right: 8px;
+      }
+    }
     img {
       display: inline-block;
       vertical-align: middle;
-      padding-right: 8px;
     }
     a {
       display: inline-block;
       vertical-align: middle;
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        display: inline-block !important;
+      }
       &:hover {
         color: $secondary-color !important;
       }
     }
   }
 }
+
 .menu {
-  @media only screen and (max-width: #{$global-breakpoint}) {
-    width: 272px !important;
-    margin-right: auto !important;
-    margin-left: auto !important;
+  .first, .second, .third {
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      padding-bottom: 12px !important;
+    }
   }
-  &__list{
+  &__list {
     padding: 0;
     margin: 0;
   }
@@ -117,8 +127,42 @@ table.header {
     display: inline-block;
     vertical-align: top;
     a {
-      padding-right: 8px;
       text-align: left;
+      @media only screen and (max-width: #{$global-breakpoint}) {
+      }
     }
+  }
+}
+
+.pr-reset {
+  padding-right: 0 !important;
+  a {
+    padding-right: 0 !important;
+  }
+}
+
+.pl-reset {
+  padding-left: 0 !important;
+  a {
+    padding-right: 0 !important;
+  }
+}
+
+.pr-reset-sm {
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    padding-right: 0 !important;
+  }
+
+}
+
+.float-left-sm {
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    float: left !important;
+  }
+}
+
+.float-right-sm {
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    float: right !important;
   }
 }

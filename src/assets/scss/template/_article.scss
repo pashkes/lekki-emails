@@ -1,6 +1,7 @@
 .article {
   &__name {
     margin-bottom: 2px;
+    line-height: 0 !important;
     a {
       line-height: 23px;
       font-size: 18px;

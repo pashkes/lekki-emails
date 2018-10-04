@@ -1,157 +1,210 @@
-<wrapper class="footer">
+{{#unlesspage
+'auto-response'
+'left-card'
+'no-response'
+'special-offer'
+'email-confirmation'
+'order-formed-delivery'
+'order-12-hours'
+'order'
+'order-delivery'
+'order-finished'
+'order-formed-vyvoz'
+'order-punkt-vydachy'
+}}
+<hr/>
+{{/unlesspage}}
+<container>
     {{#unlesspage
-        'auto-response'
-        'left-card'
-        'no-response'
-        'special-offer'
-        'email-confirmation'
-        'order-formed-delivery'
-        'order-12-hours'
-        'order'
-        'order-delivery'
-        'order-finished'
-        'order-formed-vyvoz'
-        'order-punkt-vydachy'
+    'auto-response'
+    'left-card'
+    'no-response'
+    'special-offer'
+    'email-confirmation'
+    'order-formed-delivery'
+    'order-12-hours'
+    'order'
+    'order-delivery'
+    'order-finished'
+    'order-formed-vyvoz'
+    'order-punkt-vydachy'
     }}
-        <hr/>
-    {{/unlesspage}}
-    <container>
-        {{#unlesspage
-            'auto-response'
-            'left-card'
-            'no-response'
-            'special-offer'
-            'email-confirmation'
-            'order-formed-delivery'
-            'order-12-hours'
-            'order'
-            'order-delivery'
-            'order-finished'
-            'order-formed-vyvoz'
-            'order-punkt-vydachy'
-        }}
-            <spacer size="40"></spacer>
-        {{/unlesspage}}
-        {{#ifpage 'email-confirmation' 'order-formed-delivery' 'special-offer' 'password-change' 'review-promo' 'registration' 'auto-response'}}
-        <spacer size="10"></spacer>
-        {{/ifpage}}
-        <p class="footer__load-text text-center">Загрузи приложение, получи Cashback 15%</p>
-        <row>
-            <columns></columns>
-            <columns large="6">
-                    <a href="#" class="footer__btn-first">
-                        <img src="assets/img/play-market.svg" width="160" height="48" class="small-float-center float-right"
-                             alt="play-market">
-                    </a>
-            </columns>
-            <columns large="6">
-                    <a href="#" class="footer__btn-second">
-                        <img src="assets/img/app-store.svg" width="160" height="48" class="small-float-center float-left"
-                             alt="app-store">
-                    </a>
-            </columns>
-            <columns></columns>
-        </row>
-    </container>
-    <spacer size="48"></spacer>
-    <hr/>
-    {{#ifpage 'registration' 'special-offer'}}
-    <container class="footer__help">
-        <spacer size="34"></spacer>
-        <row>
-            <columns>
-                <h3 class="h3">Нужна помощь по заказу?</h3>
-                <p>Свяжитесь с нашей службой поддержки любым удобным для вас способом:</p>
-                <ul class="list">
-                    <li><img src="assets/img/icons/circle.png" alt="">ответьте на это письмо</li>
-                    <li><img src="assets/img/icons/circle.png" alt="">по телефону <a href="tel+74950035555">+7 495 003-55-55</a></li>
-                    <li><img src="assets/img/icons/circle.png" alt="">напишите на почту <a  class="underline" href="mailto:info@lekki.ru">info@lekki.ru</a></li>
-                    <li><img src="assets/img/icons/circle.png" alt="">закажите <a class="underline" href="#">обратный звонок</a> и мы перезвоним вам сами</li>
-                </ul>
-            </columns>
-        </row>
-    </container>
     <spacer size="40"></spacer>
-    <hr>
+    {{/unlesspage}}
+    {{#ifpage 'email-confirmation' 'order-formed-delivery' 'special-offer' 'password-change' 'review-promo'
+    'registration' 'auto-response'}}
+    <spacer size="10"></spacer>
     {{/ifpage}}
-    <wrapper class="footer__nav">
+    <p class="footer__load-text text-center">Загрузи приложение, получи Cashback 15%</p>
+    <row>
+        <columns></columns>
+        <columns large="6">
+            <p class="text-right small-text-center mb-reset first-app"><a href="#" class="text-right small-text-center"
+                                                                          target="_blank">
+                <img src="https://s3.eu-west-3.amazonaws.com/pashkes/play-market.png"
+                     class="small-float-center float-right" width="160" height="48"
+                     alt="play-market">
+            </a></p>
+        </columns>
+        <columns large="6">
+            <p class="small-text-center mb-reset second-app"><a href="#" class="text-right small-text-center"
+                                                                target="_blank">
+                <img src="https://s3.eu-west-3.amazonaws.com/pashkes/app-store.png" class="small-float-center"
+                     width="160" height="48"
+                     alt="app-store">
+            </a></p>
+        </columns>
+        <columns></columns>
+    </row>
+</container>
+<spacer size="48"></spacer>
+<hr/>
+{{#ifpage 'registration' 'special-offer'}}
+<container class="footer__help">
+    <spacer size="34"></spacer>
+    <row>
+        <columns>
+            <h3 class="h3">Нужна помощь по заказу?</h3>
+            <p>Свяжитесь с нашей службой поддержки любым удобным для вас способом:</p>
+            <table class="list-custom-circle" valign="middle">
+                <tbody>
+                <tr valign="middle">
+                    <td valign="middle"><img src="https://s3.eu-west-3.amazonaws.com/pashkes/circle.png" width="8" height="8" alt=""></td>
+                    <td valign="middle"><p class="mb-reset">ответьте на это письмо</p></td>
+                </tr>
+                <tr valign="middle">
+                    <td valign="middle"><img src="https://s3.eu-west-3.amazonaws.com/pashkes/circle.png" width="8" height="8" alt=""></td>
+                    <td valign="middle"><p class="mb-reset">по телефону</p></td>
+                </tr>
+                <tr valign="middle">
+                    <td valign="middle"><img src="https://s3.eu-west-3.amazonaws.com/pashkes/circle.png" width="8" height="8" alt=""></td>
+                    <td valign="middle"><p class="mb-reset">закажите</p></td>
+                </tr>
+                <tr valign="middle">
+                    <td valign="bottom"><img src="https://s3.eu-west-3.amazonaws.com/pashkes/circle.png" width="8" height="8" alt=""></td>
+                    <td valign="bottom"><p class="mb-reset">закажите <a
+                            class="underline" href="#" target="_blank">обратный звонок</a> и мы перезвоним вам сами</p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </columns>
+    </row>
+</container>
+<spacer size="40"></spacer>
+<hr>
+{{/ifpage}}
+<wrapper class="footer__nav " >
+    <container>
+        <spacer size="35"></spacer>
+        <row>
+            <columns valign="top">
+                <table class="menu-footer">
+                    <tbody>
+                    <tr>
+                        <td class="small-text-center"><a href="{{root}}" class="secondary"><span style="color: #EB270E; text-decoration: none"><font color="#EB270E">Все товары</font></span></a></td>
+                    </tr>
+                    <tr>
+                        <td class="small-text-center"><a href="{{root}}" class="secondary"><span style="color: #EB270E; text-decoration: none"><font color="#EB270E">Спорт и фитнес</font></span></a></td>
+                    </tr>
+                    <tr>
+                        <td class="small-text-center"><a href="{{root}}" class="secondary"><span style="color: #EB270E; text-decoration: none"><font color="#EB270E">Косметика</font></span></a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </columns>
+            <columns valign="top">
+                <table class="menu-footer">
+                    <tbody>
+                    <tr>
+                        <td class="small-text-center"><a href="{{root}}" class="secondary"><span style="color: #EB270E; text-decoration: none"><font color="#EB270E">Приборы и изделия</font></span></a></td>
+                    </tr>
+                    <tr>
+                        <td class="small-text-center"><a href="{{root}}" class="secondary"><span style="color: #EB270E; text-decoration: none"><font color="#EB270E">Мама и малыш</font></span></a></td>
+                    </tr>
+                    <tr>
+                        <td class="small-text-center"><a href="{{root}}" class="secondary"><span style="color: #EB270E; text-decoration: none"><font color="#EB270E">Гигиена</font></span></a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </columns>
+            <columns valign="top">
+                <table class="menu-footer">
+                    <tbody>
+                    <tr>
+                        <td class="small-text-center"><a href="{{root}}" class="secondary"><span style="color: #EB270E; text-decoration: none"><font color="#EB270E">Лекарства и БАДы</font></span></a></td>
+                    </tr>
+                    <tr>
+                        <td class="small-text-center"><a href="{{root}}" class="secondary"><span style="color: #EB270E; text-decoration: none"><font color="#EB270E">Линзы</font></span></a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </columns>
+        </row>
+        <spacer size="37"></spacer>
+    </container>
+</wrapper>
+<wrapper class="footer__contacts bg-light-gray" bgcolor="#F1F1F1">
+    <wrapper class="footer__contacts-inner bg-light-gray">
         <container>
-            <spacer size="35"></spacer>
+            <spacer size="36" class="show-for-large"></spacer>
             <row>
-                <columns large="3">
-                    <menu class="vertical small-text-center">
-                        <item href="#" class="small-text-center">Все товары</item>
-                        <item href="#" class="small-text-center">Спорт и фитнес</item>
-                        <item href="#" class="small-text-center">Косметика</item>
-                    </menu>
+                <columns large="4" valign="middle">
+                    <a href="tel:+74950035555" class="footer__tel first small-text-center">+7 495
+                        003-55-55</a>
                 </columns>
-                <columns large="3">
-                    <menu class="vertical">
-                        <item href="#" class="small-text-center">Приборы и изделия</item>
-                        <item href="#" class="small-text-center">Мама и малыш</item>
-                        <item href="#" class="small-text-center">Гигиена</item>
-                    </menu>
+                <columns large="4" valign="middle">
+                    <a href="tel:+788000035555" class="footer__tel last small-text-center">8 800
+                        003-55-55</a>
                 </columns>
-                <columns large="3">
-                    <menu class="vertical">
-                        <item href="#">Лекарства и БАДы</item>
-                        <item href="#">Линзы</item>
-                    </menu>
+                <columns large="4" valign="middle">
+                    <center>
+                        <table class="social">
+                            <tbody>
+                            <th><a href="#" class="footer__social-item" target="_blank"><img
+                                    src="https://s3.eu-west-3.amazonaws.com/pashkes/vk.png" width="40" height="40"
+                                    alt="vk"></a></th>
+                            <th><a href="#" class="footer__social-item" target="_blank"><img
+                                    src="https://s3.eu-west-3.amazonaws.com/pashkes/instagram.png" width="40"
+                                    height="40" alt="instagram"></a></th>
+                            <th>
+                                <a href="#" class="footer__social-item" target="_blank"><img
+                                        src="https://s3.eu-west-3.amazonaws.com/pashkes/facebook.png" width="40"
+                                        height="40" alt="facebook"></a>
+                            </th>
+                            <th>
+                                <a href="#" class="footer__social-item margin-reset" target="_blank"><img
+                                        src="https://s3.eu-west-3.amazonaws.com/pashkes/youtube.png" width="40"
+                                        height="40"
+                                        alt="youtube"></a>
+                            </th>
+                            </tbody>
+                        </table>
+                    </center>
+
                 </columns>
             </row>
-            <spacer size="37"></spacer>
+            <spacer size="36" class="show-for-large"></spacer>
         </container>
-    </wrapper>
-    <wrapper class="footer__contacts bg-light-gray">
-        <wrapper class="footer__contacts-inner">
-            <container>
-                <spacer size="36" class="show-for-large"></spacer>
-                <row>
-                    <columns large="4" valign="middle">
-
-                        <a href="tel:+74950035555" class="footer__tel first small-text-center">+7 495
-                            003-55-55</a>
-                    </columns>
-                    <columns large="4" valign="middle">
-                       <a href="tel:+788000035555" class="footer__tel last small-text-center">8 800
-                            003-55-55</a>
-                    </columns>
-                    <columns large="4" valign="middle">
-                        <center>
-                            <a href="#" class="footer__social-item"><img src="assets/img/vk.png" width="40" height="40"
-                                                                         alt="vk"></a>
-                            <a href="#" class="footer__social-item"><img src="assets/img/instagram.png" width="40"
-                                                                         height="40" alt="instagram"></a>
-                            <a href="#" class="footer__social-item"><img src="assets/img/facebook.png" width="40"
-                                                                         height="40" alt="facebook"></a>
-                            <a href="#" class="footer__social-item"><img src="assets/img/youtube.png" width="40"
-                                                                         height="40"
-                                                                         alt="youtube"></a>
-                        </center>
-
-                    </columns>
-                </row>
-                <spacer size="36" class="show-for-large"></spacer>
-            </container>
-        </wrapper>
-    </wrapper>
-    <wrapper class="footer__copy">
-        <spacer size="44"></spacer>
-        <container>
-            <row>
-                <columns small="12" large="12">
-                    <p>
-                        <span>	&#169; lekki.ru, 2018.</span>
-                        Дистанционная продажа лекарственных средств (в том числе, с доставкой на дом)
-                        запрещена действующим
-                        законодательством Российской Федерации. Под «заказом» на сайте понимается должным образом
-                        оформленный
-                        запрос Клиента на бронирование в аптеках Лекки, а такжеее партнеров по указанному на сайте
-                        адресу
-                        перечня товаров, выбранных на сайте. Продажа товара осуществляется в аптечной организации.</p>
-                </columns>
-            </row>
-        </container>
-        <spacer size="44"></spacer>
     </wrapper>
 </wrapper>
+<wrapper class="footer__copy">
+    <spacer size="44"></spacer>
+    <container>
+        <row>
+            <columns small="12" large="12">
+                <p>
+                    <span>	&#169; lekki.ru, 2018.</span>
+                    Дистанционная продажа лекарственных средств (в том числе, с доставкой на дом)
+                    запрещена действующим
+                    законодательством Российской Федерации. Под «заказом» на сайте понимается должным образом
+                    оформленный
+                    запрос Клиента на бронирование в аптеках Лекки, а такжеее партнеров по указанному на сайте
+                    адресу
+                    перечня товаров, выбранных на сайте. Продажа товара осуществляется в аптечной организации.</p>
+            </columns>
+        </row>
+    </container>
+    <spacer size="44"></spacer>
+</wrapper>
+

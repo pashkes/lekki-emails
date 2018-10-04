@@ -53,7 +53,7 @@ function clean(done) {
 function pages() {
   return gulp.src(['src/pages/**/*.html', '!src/pages/archive/**/*.html'])
     .pipe(panini({
-      root: 'https://s3.eu-west-3.amazonaws.com/pashkes/',
+      root: 'src/pages',
       layouts: 'src/layouts',
       partials: 'src/partials',
       helpers: 'src/helpers'
